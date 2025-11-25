@@ -13,7 +13,7 @@ body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 40px 20px;
   min-height: 100vh;
-text-align: center;
+  text-align: center;
 }
 
 .container {
@@ -29,12 +29,10 @@ text-align: center;
     transform: translateY(-4px);
 }
 
-
 .input-area {
     display: flex;
     gap: 8px;
 }
-
 
 input[type="text"] {
     flex: 1;
@@ -42,7 +40,6 @@ input[type="text"] {
     border-radius: 6px;
     border: 1px solid #ccc;
 }
-
 
 button {
   background: #4CAF50;
@@ -58,13 +55,11 @@ button:hover {
   background: #097d07;
 }
 
-
 ul {
     margin-top: 20px;
     list-style: none;
     padding: 0;
 }
-
 
 li {
     background: #eee;
