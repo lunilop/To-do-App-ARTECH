@@ -1,3 +1,88 @@
 /* ============================================
    Styles de To Do App
    ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+  min-height: 100vh;
+text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.container:hover {
+    transform: translateY(-4px);
+}
+
+
+.input-area {
+    display: flex;
+    gap: 8px;
+}
+
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #097d07;
+}
+
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+
+li {
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.actions button {
+    margin-left: 5px;
+    background: #2196F3;
+}
+
+
+.actions .delete {
+    background: #E53935;
+}
