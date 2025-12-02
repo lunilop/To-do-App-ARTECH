@@ -1,0 +1,29 @@
+/* 
+   Estilos personalizados para la aplicación de saludo
+   Estos estilos mejoran la apariencia visual de los controles
+*/
+
+/* Estilo del contenedor principal (VBox) */
+.sapUiMediumMargin {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Margen superior pequeño para espaciar los elementos */
+.sapUiSmallMarginTop {
+    margin-top: 1rem;
+}
+
+/* Margen superior medio para el texto del saludo */
+.sapUiMediumMarginTop {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0070f2;
+}
+
+/* Estilo original del título */
+.titleColor {
+    color: blueviolet !important;
+}

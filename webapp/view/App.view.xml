@@ -1,0 +1,68 @@
+<mvc:XMLView
+    controllerName="FioriArtech2025.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <!-- 
+        Shell: Contenedor principal que proporciona la estructura base de la aplicación UI5.
+        Es el contenedor de nivel más alto que envuelve toda la interfaz de usuario.
+    -->
+    <Shell appWidthLimited="false">
+        <!-- 
+            Page: Proporciona una estructura de página con encabezado (header) y contenido.
+            Esto permite organizar la interfaz de forma clara con título y área de contenido.
+        -->
+        <!-- 
+            Page: Proporciona una estructura de página con encabezado y contenido.
+            El atributo title utiliza data binding para obtener el título del archivo i18n.properties
+        -->
+        <Page title="{i18n>appTitle}">
+            <!-- 
+                VBox: Contenedor vertical que organiza los controles uno debajo del otro.
+                Esto permite un layout vertical donde los elementos se apilan.
+            -->
+            <VBox class="sapUiMediumMargin">
+                <!-- 
+                    Label: Etiqueta de texto que describe al usuario qué debe ingresar.
+                    El atributo text="{i18n>labelNombre}" obtiene el texto del archivo i18n.properties
+                    Esto permite cambiar el idioma sin modificar el código XML
+                -->
+                <Label text="{i18n>labelNombre}" />
+                
+                <!-- 
+                    Input: Campo de entrada de texto donde el usuario puede escribir su nombre.
+                    El atributo id="inputNombre" permite referenciar este campo desde el controlador.
+                    El atributo placeholder="{i18n>placeholderNombre}" obtiene el texto de sugerencia del i18n.properties
+                -->
+                <Input 
+                    id="inputNombre"
+                    placeholder="{i18n>placeholderNombre}"
+                    class="sapUiSmallMarginTop" />
+                
+                <!-- 
+                    Button: Botón que ejecuta la función onSaludar cuando se hace clic.
+                    El atributo press=".onSaludar" vincula el evento de clic con el método del controlador.
+                    El atributo text="{i18n>buttonSaludar}" obtiene el texto del botón desde i18n.properties
+                -->
+                <Button 
+                    text="{i18n>buttonSaludar}"
+                    press=".onSaludar"
+                    type="Emphasized"
+                    class="sapUiSmallMarginTop" />
+                
+                <!-- 
+                    Text: Elemento que muestra el saludo al usuario.
+                    El atributo text="{/mensaje}" vincula el contenido a una propiedad del modelo JSON.
+                    Inicialmente estará vacío hasta que el usuario ingrese su nombre y haga clic.
+                    visible="{= ${/mensaje} !== ''}" hace que el texto solo sea visible cuando hay un saludo
+                -->
+                <Text 
+                    id="textMensaje"
+                    text="{/mensaje}"
+                    class="sapUiMediumMarginTop"
+                    visible="{= ${/mensaje} !== ''}" />
+            </VBox>
+        </Page>
+    </Shell>
+
+</mvc:XMLView>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define la codificación de caracteres para soportar acentos y caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- Meta viewport para responsive design en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Aplicación de Saludo - UI5 Freestyle</title>
+    
+    <!-- 
+        Script de bootstrap de SAP UI5
+        Este script es esencial para cargar el framework de UI5
+        
+        Atributos importantes:
+        - id="sap-ui-bootstrap": Identificador para que UI5 pueda encontrar esta configuración
+        - src="resources/sap-ui-core.js": Ruta al archivo core de UI5
+        - data-sap-ui-theme="sap_horizon": Define el tema visual (Horizon es el tema moderno)
+        - data-sap-ui-libs="sap.m": Carga la librería de controles móviles
+        - data-sap-ui-async="true": Carga asincrónica para mejor rendimiento
+        - data-sap-ui-compat-version="edge": Usa la versión más reciente de compatibilidad
+        - data-sap-ui-on-init: Módulo que se ejecuta al inicializar UI5
+        - data-sap-ui-resource-roots: Define dónde encontrar los recursos de la aplicación
+    -->
+    <script
+        id="sap-ui-bootstrap"
+        src="resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_horizon"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-async="true"
+        data-sap-ui-compat-version="edge"
+        data-sap-ui-on-init="module:FioriArtech2025/index"
+        data-sap-ui-resource-roots='{
+            "FioriArtech2025": "./"
+        }'>
+    </script>
+</head>
+<!-- 
+    Body con clase sapUiBody: Esto aplica los estilos base de UI5 al elemento body
+    Proporciona margins, fonts y otros estilos necesarios para la aplicación
+-->
+<body id="content" class="sapUiBody">
+    <!-- 
+        El elemento con id="content" es donde se renderizará la aplicación
+        La vista App.view.xml se colocará aquí mediante el método placeAt("content")
+    -->
+</body>
+</html>
