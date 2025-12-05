@@ -1,0 +1,45 @@
+/* Contenedor principal */
+.myContainer {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 30rem;
+    margin: 2rem auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.myCenterBox {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center; 
+    height: 25%;
+    width: 100%;
+}
+
+/* Título estilizado */
+.myTitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%; 
+    color: rgb(57, 2, 108);
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;  
+}
+
+/* Estilo del input */
+.myInput {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Botón con un toque más moderno */
+.myButton .sapMBtnInner {
+    margin-top: 1rem;
+    background-color: #9e004f !important; 
+    color: white !important; 
+    border: none !important;
+}

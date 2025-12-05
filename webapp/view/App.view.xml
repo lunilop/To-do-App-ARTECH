@@ -1,0 +1,32 @@
+<mvc:XMLView controllerName="artech-capacitacion-fiori.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+    <Shell>
+        <App>
+            <Page>
+                <Title text="{i18n>appTitle}" 
+                    level="H1" 
+                    class="myTitle" 
+                    wrapping="true" />
+
+                <VBox class="myCenterBox"> 
+    
+                    <Label text="{i18n>labelName}" 
+                        labelFor="inputName"
+                        class="myInput"/>
+        
+                    <Input 
+                        id="inputName"
+                        width="20rem" 
+                        placeholder="{i18n>placeholderName}"/>
+    
+                    <Button 
+                        text="{i18n>buttonGreet}" 
+                        press=".onClick" 
+                        type="Emphasized" 
+                        class="myButton"/> 
+                </VBox>
+            </Page>
+        </App>
+    </Shell>
+</mvc:XMLView>
